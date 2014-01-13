@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody))]
 public class BallMovement : MonoBehaviour
 {
     public float speed = 10;
@@ -9,6 +10,8 @@ public class BallMovement : MonoBehaviour
 	
 	void FixedUpdate()
     {
+        if(networkView && !networkView.isMine) return;
+    
         var input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         input = Vector3.ClampMagnitude(input, 1);
         
