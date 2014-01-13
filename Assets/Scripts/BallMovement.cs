@@ -28,6 +28,12 @@ public class BallMovement : MonoBehaviour
             rigidbody.velocity = v;
         }
 	}
+    
+    [RPC]
+    private void SetColor(Vector3 color)
+    {
+        renderer.material.color = new Color(color.x, color.y, color.z);
+    }
 }
 
 

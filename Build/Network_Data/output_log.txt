@@ -11,7 +11,34 @@ Platform assembly: C:\Users\Sascha\Projekte\Unity\GMAG2013\Build\Network_Data\Ma
 Loading C:\Users\Sascha\Projekte\Unity\GMAG2013\Build\Network_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Sascha\Projekte\Unity\GMAG2013\Build\Network_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Sascha\Projekte\Unity\GMAG2013\Build\Network_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.070 seconds
+- Completed reload, in  0.066 seconds
 desktop: 1024x768 60Hz; virtual: 1024x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+UnloadTime: 1.027141 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 129.
+Total: 1.729006 ms (FindLiveObjects: 0.023202 ms CreateObjectMapping: 0.021863 ms MarkObjects: 0.329738 ms  DeleteObjects: 0.027664 ms)
+
+Receiving NAT punchthrough attempt from target 490892363253985452 failed
+
+ 
+(Filename:  Line: 823)
+
+Receiving NAT punchthrough attempt from target 580964360719111634 failed
+
+ 
+(Filename:  Line: 823)
+
+Receiving NAT punchthrough attempt from target 580964360719111634 failed
+
+ 
+(Filename:  Line: 823)
+
+UnloadTime: 0.404699 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 130.
+Total: 0.781287 ms (FindLiveObjects: 0.008477 ms CreateObjectMapping: 0.009370 ms MarkObjects: 0.124042 ms  DeleteObjects: 0.016955 ms)
+

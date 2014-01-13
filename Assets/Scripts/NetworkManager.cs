@@ -5,6 +5,7 @@ public class NetworkManager : MonoBehaviour
 {
     public GameObject player;
     private string gameName = "Saschas Spiel";
+    //private string targetIP = "...";
 	
     
     void Start()
@@ -44,6 +45,13 @@ public class NetworkManager : MonoBehaviour
                         Network.Connect(host);
                     }
                 }
+                /*
+                targetIP = GUILayout.TextField(targetIP);
+                if(GUILayout.Button("Connect to IP"))
+                {
+                    Network.Connect(targetIP, 25000);
+                }
+                */
                 break;
                 
             case NetworkPeerType.Server:
@@ -89,7 +97,10 @@ public class NetworkManager : MonoBehaviour
     
     private void SpawnPlayer()
     {
-        Network.Instantiate(player, transform.position, Quaternion.identity, 0);
+        Object o = Network.Instantiate(player, transform.position, Quaternion.identity, 0);
+        var color = new Color(Random.value, Random.value, Random.value, 1);
+        
+        (o as GameObject).networkView.RPC("SetColor", RPCMode.AllBuffered, new Vector3(color.r, color.g, color.b));
     }
     
     void OnPlayerDisconnected(NetworkPlayer player)
